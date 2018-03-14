@@ -1,6 +1,12 @@
 package practice2;
 
-public class Book {
+import java.io.Serializable;
+
+public class Book implements Serializable{ // 책
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String bNo;
 	private int category;
 	private String title;
@@ -46,6 +52,11 @@ public class Book {
 	public void setAuthor(String author) {
 		this.author = author;
 	}
-	
+
+	@Override
+	public String toString() { // 정보 반환
+		// TODO Auto-generated method stub
+		return "[Book No. : "+ bNo + "|Category : " + category + "|Title : " + title + "|Author : "+ author +"]";
+	}
 	
 }
