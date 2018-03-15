@@ -14,6 +14,9 @@ public class BookManagerMap {
 	
 	public BookManagerMap() {
 		booksMap = new HashMap<String, Book>();
+		putBook(new Book("1357", 4, "SKT는 어떻게 몰락했는가", "이현우"));
+		putBook(new Book("5959", 1, "단유기", "김의중"));
+		putBook(new Book("6974", 3, "완벽한 편이야", "PraY"));
 	}
 	
 	public BookManagerMap(HashMap<String, Book> booksMap) {

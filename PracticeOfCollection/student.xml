@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Student Score</comment>
+<entry key="1">|1|김동하|100|80|100|280|93|</entry>
+<entry key="2">|2|한왕호|100|100|100|300|100|</entry>
+<entry key="3">|3|곽보성|100|100|100|300|100|</entry>
+<entry key="4">|4|김종인|100|75|90|265|88|</entry>
+<entry key="5">|5|강범현|100|100|100|300|100|</entry>
+</properties>
