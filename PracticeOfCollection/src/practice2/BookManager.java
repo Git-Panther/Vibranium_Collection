@@ -64,7 +64,7 @@ public class BookManager { // 북 매니저
 		}
 	}
 	
-	public boolean hasNoDuplicate(String title) { // 중복이 없는지 검사. 중복 없으면 true
+	public boolean hasNoDuplicateTitle(String title) { // 책 이름 중복이 없는지 검사. 중복 없으면 true
 		Iterator<Book> itr = bookList.iterator();
 		while(itr.hasNext()) {
 			if(itr.next().getTitle().equals(title)) // 타이틀 중에 중복이 있다면
@@ -74,4 +74,13 @@ public class BookManager { // 북 매니저
 		return true;
 	}
 	
+	public boolean hasNoDuplicatebNo(String bNo) { // 책 번호 중복이 없는지 검사. 중복 없으면 true
+		Iterator<Book> itr = bookList.iterator();
+		while(itr.hasNext()) {
+			if(itr.next().getbNo().equals(bNo)) // 북 넘버 중에 중복이 있다면
+				return false;
+		}
+		
+		return true;
+	}
 }
