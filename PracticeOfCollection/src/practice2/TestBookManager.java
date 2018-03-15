@@ -44,14 +44,14 @@ public class TestBookManager {
 				} 
 				break;
 			case 2:
-				if(manager.sortedBookList().length != 0)
+				if(manager.getBookCount() != 0)
 					manager.printBookList(manager.sortedBookList());
 				else
 					System.out.println("도서 정보가 하나도 없습니다!");
 				break;
 			case 3:
-				if(manager.sortedBookList().length != 0) {
-					if(manager.sortedBookList().length > 1) {
+				if(manager.getBookCount() != 0) {
+					if(manager.getBookCount() > 1) {
 						System.out.print("삭제할 도서명을 입력하세요 : ");
 						try {
 							index = manager.searchBook(inputBookTitle());
@@ -82,7 +82,7 @@ public class TestBookManager {
 				}
 				break;
 			case 4:
-				if(manager.sortedBookList().length != 0) {
+				if(manager.getBookCount() != 0) {
 					System.out.print("검색할 도서명을 입력하세요 : ");
 					try {
 						manager.printBook(manager.searchBook(inputBookTitle()));
@@ -94,7 +94,7 @@ public class TestBookManager {
 				}
 				break;
 			case 5:
-				if(manager.sortedBookList().length != 0)
+				if(manager.getBookCount() != 0)
 					manager.displayAll();
 				else
 					System.out.println("도서 정보가 하나도 없습니다!");

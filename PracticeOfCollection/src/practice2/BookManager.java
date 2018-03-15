@@ -83,4 +83,8 @@ public class BookManager { // 북 매니저
 		
 		return true;
 	}
+	
+	public int getBookCount() {
+		return bookList.size();
+	}
 }
